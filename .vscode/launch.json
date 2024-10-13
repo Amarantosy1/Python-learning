@@ -1,15 +1,15 @@
 {
     "configurations": [
-        
+
         {
             "name": "Python 调试程序: 当前文件",
-            "type": "debugpy",
+            "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
         },
         {
-            "type": "debugpy",
+            "type": "python",
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/${input:programPath}"
