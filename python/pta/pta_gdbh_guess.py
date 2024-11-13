@@ -5,9 +5,11 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-
-N = int(input())
-for p in range(2, int(N/2)):
-    if is_prime(p) and is_prime(N - p):
-        print("{} = {} + {}".format(N, p, N - p))
+while True:
+    n=int(input())
+    if n%2==0 and n>=6:
+        break
+for p in range(2, int(n/2)):
+    if is_prime(p) and is_prime(n - p):
+        print("{} = {} + {}".format(n, p, n - p))
         break
